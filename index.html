@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="Content-Language" content="ja">
@@ -31,13 +31,12 @@
 			/* デバイスを縦向きにした際の記述 */
 			}
 			.headline {color: black}
-			.top {color:red;margin-left: 80px;}
-			.foot {color:black;margin-left: 80px;}
 			a {color:green;margin-left: 80px;}
-			.h2 {color:black;margin-left: 40px;}
-			.drive {color:red;margin-left: 80px;}
-			.h3 {color:black;margin-left: 80px;}
-			.h3-2 {color:black;margin-left: 30px;}
+			.left-80-red {color:red;margin-left: 80px;}
+			.left-30-black {color:black;margin-left: 30px;}
+			.left-40-black {color:black;margin-left: 40px;}
+			.left-80-black {color:black;margin-left: 80px;}
+			.left-80-green {color:green;margin-left: 80px;}
 		</style>
 	<title>Redmi Note 10JE(XIG02:iris) Lenovo Legion Y700 Stock Fastboot Rom</title>
 	<div style="position: relative; display: inline-block; padding: 1rem 2rem 1rem 3rem; color: #263f1f; border-radius: 50px 0 0 50px; background: #d8e3d5; font-size: 20px;">
@@ -56,76 +55,75 @@
 		<a style="color:black;margin-left: 0px;" href="#y700">Jump to 2.Lenovo Region Y700(2022)</a><br><br>
 		<div class="headline">
 			<h2>1. Redimi Note 10JE(XIG02:iris)<h2>
-			<h2 class="h2">(1)　fastboot rom</h2>
+			<h2 class="left-40-black">(1)　fastboot rom</h2>
 		</div>
 		<p>
-			<a class="top" href="https://drive.google.com/uc?id=18HyBQ2sQI56DlbsZo9G33GP8z65jzouB&export=download">XIG02_global_images_V14.0.16.0_ota.zip</a><br><br>
+			<a class="left-80-red" href="https://drive.google.com/uc?id=18HyBQ2sQI56DlbsZo9G33GP8z65jzouB&export=download">XIG02_global_images_V14.0.16.0_ota.zip</a><br><br>
 			<a href="https://drive.google.com/uc?id=1s_xOqtTwhS-KTmN9fvRIKKzE7d-FTqWx&export=download">XIG02_global_images_V14.0.15.0_ota.zip</a><br><br>
-			<a href="https://drive.google.com/uc?id=18OpJOVLBKh1y5_g3alJrbEyGoPQPLn8H&export=download">XIG02_global_images_V14.0.14.0_ota.zip</a><br><br>
-			<a href="https://drive.google.com/uc?id=1mbbXd1cwc9YyY28xtqHIqc7ge-qP9gBM&export=download">XIG02_global_images_V14.0.4.0_ota.zip</a><br><br>
 			<a href="https://drive.google.com/uc?id=1rsN2tfQZZ0KtXDQ5QLm2YFoYN9IbmFJN&export=download">XIG02_global_images_V13.0.10.0_ota.zip</a><br><br>
 			<a href="https://drive.google.com/uc?id=1-R2gJPkXCCMK94vAox-me5xM6KjwjJeB&export=download">XIG02_global_images_V13.0.9.0.SKRJPKD_12.0_unoffical.zip</a><br><br>
 			<a href="https://drive.google.com/uc?id=1ews9lfCVzdtLslW2uYW_ShLZPWnsmyFR&export=download">XIG02_global_images_V12.5.14.0.RKRJPKD_11.0_unoffical.zip</a><br><br>
 			<a href="https://drive.google.com/uc?id=1IAYTvxqPIvTumPxT8qPA7ToPyenx2-2m&export=download">twrp-3.7.0_12-2-iris.img</a><br><br>
 		</p>
-		<p><a class="drive" href="https://drive.google.com/drive/folders/1EVuEn-75hqJZcvHjo9DYldIZrhDo2jXA?usp=drive_link">Google Drive Link JE</a><br></p>
-		<div class="foot">
+		<a class="left-80-red" href="https://drive.google.com/drive/folders/1EVuEn-75hqJZcvHjo9DYldIZrhDo2jXA?usp=drive_link">Google Drive Link JE</a>
+		<div class="left-80-black">
 			<p>※　XIG02_global_images_V13.0.9.0.SKRJPKD_12.0_unoffical ,</p>
-			<p class="h3-2">XIG02_global_images_V12.5.14.0.RKRJPKD_11.0_unoffical</p>
-			<p class="h3-2">miflash ok , edl no test</p>
+			<p class="left-30-black">XIG02_global_images_V12.5.14.0.RKRJPKD_11.0_unoffical</p>
+			<p class="left-30-black">miflash ok , edl no test</p>
 		</div>
-		<h2 class="h2">(2)　Disable OTA Updaters(os update無効)</h2>
-		<div class="h3">
+		<h2 class="left-40-black">(2)　Disable OTA Updaters(os update無効)</h2>
+		<div class="left-80-black">
 			<p>①　Developer Options -> Automatic system updates -> off</p>
 			<p>②　adb shell su -c pm disable com.google.android.gms/.chimera.GmsIntentOperationService</p>
-			<p class="h3-2">システムupdate,install無効(有効　enable)</p>
+			<p class="left-30-black">システムupdate,install無効(有効　enable)</p>
 			<p>③　adb shell su -c pm disable com.google.android.gms/.update.SystemUpdateActivity</p>
-			<p class="h3-2">ふた締め(有効　enable)</p>
+			<p class="left-30-black">ふた締め(有効　enable)</p>
 			<p>④　adb shell su -c rm /data/ota_package/*</p>
-			<p class="h3-2">データの削除</p>
+			<p class="left-30-black">データの削除</p>
 		</div>
-		<h2 class="h2">(3)　Uninstall (delete) unnecessary applications(不要なアプリ削除)</h2>
-		<div class="h3">
+		<h2 class="left-40-black">(3)　Uninstall (delete) unnecessary applications(不要なアプリ削除)</h2>
+		<div class="left-80-black">
 			<p>①　fastboot erase cust</p>
 			<p><p>②　fastboot -w</p></p>
 		</div>
 		<p><br><br></p>
 		<div class="headline">
 			<h2 id="y700">2. Lenovo Region Y700(2022)</h2>
-			<h2 class="h2">(1)　EDL & fastboot rom</h2></h2>
+			<h2 class="left-40-black">(1)　EDL & fastboot rom</h2></h2>
 		</div>
 		<p>
-			<a class="top" href="https://drive.google.com/uc?id=1gEdJJW-_Q2i-_-xo1r8V-QDrl49jNDeQ&export=download">y700_zui_v14.0.286_edl_v2.0.zip</a><br><br>
+			<a class="left-80-red" href="https://drive.google.com/uc?id=1gEdJJW-_Q2i-_-xo1r8V-QDrl49jNDeQ&export=download">y700_zui_v14.0.286_edl_v2.0.zip</a><br><br>
 			<a href="https://drive.google.com/uc?id=1YFz_lJT958Wv9eQRFZAP7wUVW6jMsG-3&export=download">y700_zui_v14.0.270_edl_v2.0.zip</a><br><br>
-			<a href="https://drive.google.com/uc?id=1tk3DvpgowWBX7EiFeuiBg0NqP7m3Z-6G&export=download">y700_zui_v14.0.255_edl_v2.0.zip</a><br><br>
 			<a href="https://drive.google.com/uc?id=1ufJtWiSjBJLgfNx4oQcLjvAat2KmT-Eu&export=download">y700_zui_v13.1.578_edl_v2.0.zip</a><br><br>
 			<a href="https://drive.google.com/uc?id=1Pyo-k5ZbbrVlgUMAMw290QKVjjwjjr1t&export=download">y700_zui_v13.0.586_fastboot_v2.0.zip</a><br><br>
 			<a href="https://drive.google.com/uc?id=1CQ0WtwSZpgT_SVxjd7mPKNql6bGMVPHd&export=download">y700_global_fastboot_v2.0.zip</a><br><br>
 		</p>
-		<p><a class="drive" ;" href="https://drive.google.com/drive/folders/19sonVqWJ4VqfDBphGkebHTcOH1u-Eq3H?usp=drive_link">Google Drive Link Y700</a><br></p>
-		<div class="foot">
+		<a class="left-80-red" ; href="https://drive.google.com/drive/folders/19sonVqWJ4VqfDBphGkebHTcOH1u-Eq3H?usp=drive_link">Google Drive Link Y700</a>
+		<div class="left-80-black">
 			<p>※　Device critical unlocked: false -> flash_all_d.bat</p>
-			<p class="h3-2">Device critical unlocked: true -> flash_all.bat</p>
+			<p class="left-30-black">Device critical unlocked: true -> flash_all.bat</p>
 		</div>
-		<h2 class="h2">(2)　Disable OTA Updaters(os update無効)</h2>
-		<div class="h3">
+		<h2 class="left-40-black">(2)　QFILの使い方(How to use QFIL)</h2>
+		<a class="left-80-green" ; href="https://note.com/calm_hebe587/m/m9513b43dc76b">QFILの使い方(How to use QFIL)</a>
+		<h2 class="left-40-black">(3)　Disable OTA Updaters(os update無効)</h2>
+		<div class="left-80-black">
 			<p>①　Developer Options -> Automatic system updates -> off</p>
 			<p>②　adb shell su -c pm disable com.google.android.gms/.chimera.GmsIntentOperationService</p>
-			<p class="h3-2">システムupdate,install無効(有効　enable)</p>
+			<p class="left-30-black">システムupdate,install無効(有効　enable)</p>
 			<p>③　adb shell su -c pm disable com.zui.ota/.ui.MainActivity</p>
-			<p class="h3-2">ふた締め(有効　enable)</p>
+			<p class="left-30-black">ふた締め(有効　enable)</p>
 			<p>④　adb shell su -c rm /data/ota_package/*</p>
-			<p class="h3-2">データの削除</p>
+			<p class="left-30-black">データの削除</p>
 		</div>
-		<h2 class="h2">(3)　unlock_critical</h2>
-		<div class="h3">
+		<h2 class="left-40-black">(4)　unlock_critical</h2>
+		<div class="left-80-black">
 			<p>①　zui13(zui14 not working)</p>
 			<p>②　fastboot oem device-info</p>
 			<p>③　fastboot flashing unlock_critical</p>
 			<p>④　fastboot oem device-info</p>
 		</div>
-		<h2 class="h2">(4)　bootloader relock</h2>
-		<div class="h3">
+		<h2 class="left-40-black">(5)　bootloader relock</h2>
+		<div class="left-80-black">
 			<p>bootloaderをrelockする場合、最新のos versionでないとos起動時エラーになる。<br>エラーになった場合、最新osでromをflash(edl)する。</p>
 			<p>When relocking a bootloader, an error occurs when booting os if the latest os version is not used.<br>If an error occurs, flash(edl) with the latest OS.</p>
 		</div>
