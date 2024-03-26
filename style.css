@@ -9,6 +9,7 @@
 .left-80-green {color:green;margin-left: 0px;}
 .ifr {width: 400px; height: 200px;}
 h2 {font-size: 1rem;background-color: rgb(224, 213, 213);}
+body {font-size: 80%;}
 }
 /* タブレット */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
