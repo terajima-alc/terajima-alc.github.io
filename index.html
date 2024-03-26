@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Language" content="ja">
+		<meta name="google" content="notranslate">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TNH697Q');</script>
+	<!-- End Google Tag Manager -->
+	<link rel="stylesheet" href="style.css">
+	<title>Redmi Note 10JE(XIG02:iris) Lenovo Legion Y700 Stock Fastboot Rom</title>
+	<div style="position: relative; display: inline-block; padding: 1rem 2rem 1rem 3rem; color: #263f1f; border-radius: 50px 0 0 50px; background: #d8e3d5; font-size: 20px;">
+	<span style="position: absolute; top: calc(50% - 10px); left: 10px; width: 15px; height: 15px; border-radius: 50%; background: #ffffff;"></span>
+	<h1>terajima-alcの部屋<br>Redmi Note 10JE(XIG02:iris) / Legion Y700<br>Stock Rom</h1>
+	</div>
+	<p><br></p>
+	</head>
+	<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNH697Q
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+		<!-- body_info -->
+		<a class="left-80-green" href="https://note.com/calm_hebe587">ブログ始めました</a><br><br>
+		<a class="left-80-green" href="#y700_2022">Jump to 2.Lenovo Region Y700(2022:TB9707F)</a><br><br>
+		<a class="left-80-green" href="#y700_2023">Jump to 3.Lenovo Region Y700(2023:TB320FC)</a><br>
+		<p>downloadが遅い場合はfree download managerをご使用ください。</p>
+		<a class="left-80-red" href="https://note.com/calm_hebe587/n/nbd86840ac310">free download managerの使い方</a><br>
+		<p>bootloaderをunlockした場合はpartitionのfull backupをお勧めします。</p>
+		<a class="left-80-red" href="https://note.com/calm_hebe587/n/n18b23aae9056">partitionのfull backup</a><br>
+		<div class="headline">
+			<h2>1. Redimi Note 10JE(XIG02:iris)<h2>
+			<h2 class="left-40-black">(1)　fastboot rom</h2>
+		</div>
+		<p>
+			<a class="left-80-red" href="https://sourceforge.net/projects/redmi-note-10-je-xig02/files/">Redmi Note 10 JE(XIG02) Files</a><br><br>
+		</p>
+		<div class="font-70-black">
+			<p>※　XIG02_global_images_V13.0.9.0.SKRJPKD_12.0_unoffical ,</p>
+			<p class="left-30-black">XIG02_global_images_V12.5.14.0.RKRJPKD_11.0_unoffical</p>
+			<p class="left-30-black">miflash ok , edl no test</p>
+		</div>
+		<h2 class="left-40-black">(2)　Disable OTA Updaters(os update無効)</h2>
+		<div class="left-80-black">
+			<p>①　Developer Options -> Automatic system updates -> off</p>
+			<p>②　adb shell su -c pm disable com.google.android.gms/.chimera.GmsIntentOperationService</p>
+			<p class="left-30-black">システムupdate,install無効(有効　enable)</p>
+			<p>③　adb shell su -c pm disable com.google.android.gms/.update.SystemUpdateActivity</p>
+			<p class="left-30-black">ふた締め(有効　enable)</p>
+			<p>④　adb shell su -c rm /data/ota_package/*</p>
+			<p class="left-30-black">データの削除</p>
+		</div>
+		<h2 class="left-40-black">(3)　Uninstall (delete) unnecessary applications(不要なアプリ削除)</h2>
+		<div class="left-80-black">
+			<p>①　fastboot erase cust</p>
+			<p><p>②　fastboot -w</p></p>
+		</div>
+		<p><br><br></p>
+		<div class="headline">
+			<h2 id="y700_2022">2. Lenovo Region Y700(2022:TB9707F)</h2>
+			<h2 class="left-40-black">(1)　EDL & fastboot rom</h2></h2>
+		</div>
+		<p>
+			<a class="left-80-red" href="https://sourceforge.net/projects/lenovo-y700/files/">y700(2022:TB9707F) Files</a><br><br>
+		</p><p>
+		<div class="left-80-black">
+			<iframe class="ifr" src="https://drive.google.com/file/d/11t-BMhlrFoguu07OZ2dqqbUQeoy4-rrA/preview" ></iframe>
+			<p>①　fastboot oem device-info</p>
+			<p>②　fastboot flashing unlock</p>
+			<p>③　fastboot flashing unlock_critical</p>
+			<p>※　(zui14 not working)</p>
+			<p>④　fastboot oem device-info</p>
+			<p>※　Device critical unlocked: true -> flash_all.bat</p>
+		</div>
+		<h2 class="left-40-black">(2)　QFILの使い方(How to use QFIL)</h2>
+		<a class="left-80-green" ; href="https://note.com/calm_hebe587/m/m9513b43dc76b">QFILの使い方(How to use QFIL)</a>
+		<h2 class="left-40-black">(3)　y700(TB9707F:2022)のstock romを作る</h2>
+		<a class="left-80-green" ; href="https://note.com/calm_hebe587/n/n220cea3d6c4a">y700(TB9707F:2022)のstock romを作る</a>
+		<h2 class="left-40-black">(4)　bootloader relock</h2>
+		<div class="left-80-black">
+			<p>bootloaderをrelockする場合はAVB2.0(Android Verified Boot 2.0)のRollback Protectionに注意する必要があります。<br>エラーが発生した場合は、最新のOSバージョンでflash(edl)してください。</p>
+			<p>When relocking the bootloader, you need to be aware of the Rollback Protection of AVB2.0 (Android Verified Boot 2.0).<br>If an error occurs, flash(edl) with the latest OS version.</p>
+		</div>
+		<a class=left-80-green href="https://android.googlesource.com/platform/external/avb/+/main/README.md#rollback-Protection">AVB2.0 (Android Verified Boot 2.0)</a>
+		<h2 class="left-40-black">(5)　中国VPNを使って中国のみで配信しているOTAをGETする</h2>
+		<a class=left-80-green href="https://note.com/calm_hebe587/n/n7d753d336378">中国VPNを使って中国のみで配信しているOTAをGETする</a>
+		<h2 class="left-40-black">(6)　y700(2022:TB9707)のローカルupdateについて</h2>
+		<a class=left-80-green href="https://note.com/calm_hebe587/n/n7b8bd6b7b5fc">y700(2022:TB9707)のローカルupdateについて</a>
+		<p><br><br></p>
+		<div class="headline">
+			<h2 id="y700_2023">3. Lenovo Region Y700(2023:TB320FC)</h2>
+			<h2 class="left-40-black">(1)　EDL & fastboot rom</h2>
+		</div>
+		<p>
+			<a class="left-80-red" href="https://sourceforge.net/projects/lenovo-y700/files/">y700(2023:TB320FC) Files</a><br><br>
+		<p></p>
+		<div class="left-80-black">
+			<iframe class="ifr" src="https://drive.google.com/file/d/11t-BMhlrFoguu07OZ2dqqbUQeoy4-rrA/preview"></iframe>
+			<p>①　fastboot oem device-info</p>
+			<p>②　fastboot flashing unlock</p>
+			<p>③　fastboot flashing unlock_critical</p>
+			<p>④　fastboot oem device-info</p>
+			<p>※　Device critical unlocked: true -> flash_all.bat</p>
+		</div>
+		<p></p>
+		<h2 class="left-40-black">(2)　QFILの使い方(How to use QFIL)</h2>
+		<a class="left-80-green" ; href="https://note.com/calm_hebe587/m/m9513b43dc76b">QFILの使い方(How to use QFIL)</a>
+		<h2 class="left-40-black">(3)　y700(TB320FC:2023)のstock romを作る</h2>
+		<a class="left-80-green" ; href="https://note.com/calm_hebe587/n/nae1c964b45bc">y700(TB320FC:2023)のstock romを作る</a>
+		<p></p>
+		<h2 class="left-40-black">(4)　androidのRollback Protectionについて</h2>
+		<a class="left-80-green" ; href="https://note.com/calm_hebe587/n/n8365967515bd">androidのRollback Protectionについて</a>
+	</body>
+</html>
